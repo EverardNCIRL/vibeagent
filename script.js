@@ -5,7 +5,7 @@ const chainConfig = {
         contract: '0x0ec78ed49c2d27b315d462d43b5bab94d2c79bf8',
         dexScreener: 'https://dexscreener.com/ethereum/',
         tradingPartner: 'https://app.uniswap.org/',
-        color: '#4caf50',
+        color: '#00ff88',
         active: true,
         mockData: {
             marketCap: '$2,450,000',
@@ -19,7 +19,7 @@ const chainConfig = {
         contract: '0x9209e7EbD056d72C5996220e99df6049253DeBCf',
         dexScreener: 'https://dexscreener.com/avalanche/',
         tradingPartner: 'https://avaxarena.com/',
-        color: '#e84142',
+        color: '#ff4444',
         active: true,
         mockData: {
             marketCap: '$1,890,000',
