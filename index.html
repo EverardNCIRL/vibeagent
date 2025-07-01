@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9 Lives Meow Cabal - $MEOW Multi-Chain Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <h1>🐱 9 Lives Meow Cabal</h1>
+                <p>$MEOW Multi-Chain Dashboard</p>
+            </div>
+            <div class="wallet-input">
+                <input type="text" id="walletAddress" placeholder="Enter your wallet address..." />
+                <button id="trackWallet" class="btn-primary">Track Wallet</button>
+            </div>
+        </header>
+
+        <div class="dashboard">
+            <!-- Chain Grid -->
+            <div class="chain-grid">
+                <!-- Ethereum -->
+                <div class="chain-panel ethereum active" data-chain="ethereum">
+                    <div class="meow-face">
+                        <div class="face">
+                            <div class="ear left"></div>
+                            <div class="ear right"></div>
+                            <div class="head">
+                                <div class="eye left"></div>
+                                <div class="eye right"></div>
+                                <div class="nose"></div>
+                                <div class="mouth"></div>
+                                <div class="whisker w1"></div>
+                                <div class="whisker w2"></div>
+                                <div class="whisker w3"></div>
+                                <div class="whisker w4"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chain-info">
+                        <h3>Ethereum</h3>
+                        <div class="status live">LIVE</div>
+                    </div>
+                </div>
+
+                <!-- Avalanche -->
+                <div class="chain-panel avalanche active" data-chain="avalanche">
+                    <div class="meow-face">
+                        <div class="face">
+                            <div class="ear left"></div>
+                            <div class="ear right"></div>
+                            <div class="head">
+                                <div class="eye left"></div>
+                                <div class="eye right"></div>
+                                <div class="nose"></div>
+                                <div class="mouth"></div>
+                                <div class="whisker w1"></div>
+                                <div class="whisker w2"></div>
+                                <div class="whisker w3"></div>
+                                <div class="whisker w4"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chain-info">
+                        <h3>Avalanche</h3>
+                        <div class="status live">LIVE</div>
+                    </div>
+                </div>
+
+                <!-- Chain 3 - Coming Soon -->
+                <div class="chain-panel chain3" data-chain="chain3">
+                    <div class="meow-face">
+                        <div class="face">
+                            <div class="ear left"></div>
+                            <div class="ear right"></div>
+                            <div class="head">
+                                <div class="eye left"></div>
+                                <div class="eye right"></div>
+                                <div class="nose"></div>
+                                <div class="mouth"></div>
+                                <div class="whisker w1"></div>
+                                <div class="whisker w2"></div>
+                                <div class="whisker w3"></div>
+                                <div class="whisker w4"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chain-info">
+                        <h3>Chain 3</h3>
+                        <div class="status coming-soon">COMING SOON</div>
+                    </div>
+                </div>
+
+                <!-- Chain 4 - Coming Soon -->
+                <div class="chain-panel chain4" data-chain="chain4">
+                    <div class="meow-face">
+                        <div class="face">
+                            <div class="ear left"></div>
+                            <div class="ear right"></div>
+                            <div class="head">
+                                <div class="eye left"></div>
+                                <div class="eye right"></div>
+                                <div class="nose"></div>
+                                <div class="mouth"></div>
+                                <div class="whisker w1"></div>
+                                <div class="whisker w2"></div>
+                                <div class="whisker w3"></div>
+                                <div class="whisker w4"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chain-info">
+                        <h3>Chain 4</h3>
+                        <div class="status coming-soon">COMING SOON</div>
+                    </div>
+                </div>
+
+                <!-- Chain 5 - Coming Soon -->
+                <div class="chain-panel chain5" data-chain="chain5">
+                    <div class="meow-face">
+                        <div class="face">
+                            <div class="ear left"></div>
+                            <div class="ear right"></div>
+                            <div class="head">
+                                <div class="eye left"></div>
+                                <div class="eye right"></div>
+                                <div class="nose"></div>
+                                <div class="mouth"></div>
+                                <div class="whisker w1"></div>
+                                <div class="whisker w2"></div>
+                                <div class="whisker w3"></div>
+                                <div class="whisker w4"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chain-info">
+                        <h3>Chain 5</h3>
+                        <div class="status coming-soon">COMING SOON</div>
+                    </div>
+                </div>
+
+                <!-- Chain 6 - Coming Soon -->
+                <div class="chain-panel chain6" data-chain="chain6">
+                    <div class="meow-face">
+                        <div class="face">
+                            <div class="ear left"></div>
+                            <div class="ear right"></div>
+                            <div class="head">
+                                <div class="eye left"></div>
+                                <div class="eye right"></div>
+                                <div class="nose"></div>
+                                <div class="mouth"></div>
+                                <div class="whisker w1"></div>
+                                <div class="whisker w2"></div>
+                                <div class="whisker w3"></div>
+                                <div class="whisker w4"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chain-info">
+                        <h3>Chain 6</h3>
+                        <div class="status coming-soon">COMING SOON</div>
+                    </div>
+                </div>
+
+                <!-- Chain 7 - Coming Soon -->
+                <div class="chain-panel chain7" data-chain="chain7">
+                    <div class="meow-face">
+                        <div class="face">
+                            <div class="ear left"></div>
+                            <div class="ear right"></div>
+                            <div class="head">
+                                <div class="eye left"></div>
+                                <div class="eye right"></div>
+                                <div class="nose"></div>
+                                <div class="mouth"></div>
+                                <div class="whisker w1"></div>
+                                <div class="whisker w2"></div>
+                                <div class="whisker w3"></div>
+                                <div class="whisker w4"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chain-info">
+                        <h3>Chain 7</h3>
+                        <div class="status coming-soon">COMING SOON</div>
+                    </div>
+                </div>
+
+                <!-- Chain 8 - Coming Soon -->
+                <div class="chain-panel chain8" data-chain="chain8">
+                    <div class="meow-face">
+                        <div class="face">
+                            <div class="ear left"></div>
+                            <div class="ear right"></div>
+                            <div class="head">
+                                <div class="eye left"></div>
+                                <div class="eye right"></div>
+                                <div class="nose"></div>
+                                <div class="mouth"></div>
+                                <div class="whisker w1"></div>
+                                <div class="whisker w2"></div>
+                                <div class="whisker w3"></div>
+                                <div class="whisker w4"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chain-info">
+                        <h3>Chain 8</h3>
+                        <div class="status coming-soon">COMING SOON</div>
+                    </div>
+                </div>
+
+                <!-- Z Chain -->
+                <div class="chain-panel zchain" data-chain="zchain">
+                    <div class="meow-face">
+                        <div class="face">
+                            <div class="ear left"></div>
+                            <div class="ear right"></div>
+                            <div class="head">
+                                <div class="eye left"></div>
+                                <div class="eye right"></div>
+                                <div class="nose"></div>
+                                <div class="mouth"></div>
+                                <div class="whisker w1"></div>
+                                <div class="whisker w2"></div>
+                                <div class="whisker w3"></div>
+                                <div class="whisker w4"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chain-info">
+                        <h3>Z Chain</h3>
+                        <div class="status coming-soon">COMING SOON</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trading Info Panel -->
+            <div class="trading-info" id="tradingInfo">
+                <div class="info-header">
+                    <h2 id="selectedChain">Select a Chain</h2>
+                    <div class="chain-links" id="chainLinks"></div>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-label">Market Cap</div>
+                        <div class="stat-value" id="marketCap">-</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">24h Volume</div>
+                        <div class="stat-value" id="volume">-</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Liquidity</div>
+                        <div class="stat-value" id="liquidity">-</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Price</div>
+                        <div class="stat-value" id="price">-</div>
+                    </div>
+                </div>
+
+                <div class="contract-info">
+                    <h3>Contract Information</h3>
+                    <div class="contract-address" id="contractAddress">Select a chain to view contract details</div>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn-secondary" id="setAlert">
+                        <i class="fas fa-bell"></i> Set Price Alert
+                    </button>
+                    <button class="btn-secondary" id="dexScreener">
+                        <i class="fas fa-chart-line"></i> DEX Screener
+                    </button>
+                    <button class="btn-secondary" id="tradingPartner">
+                        <i class="fas fa-exchange-alt"></i> Trade
+                    </button>
+                </div>
+            </div>
+
+            <!-- Wallet Holdings -->
+            <div class="wallet-holdings" id="walletHoldings" style="display: none;">
+                <h2>Wallet Holdings</h2>
+                <div class="holdings-summary">
+                    <div class="total-value">
+                        <span class="label">Total Value:</span>
+                        <span class="value" id="totalValue">$0.00</span>
+                    </div>
+                    <div class="total-pnl">
+                        <span class="label">Total P&L:</span>
+                        <span class="value" id="totalPnL">$0.00</span>
+                    </div>
+                </div>
+                <div class="holdings-breakdown" id="holdingsBreakdown"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
