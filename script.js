@@ -3,6 +3,7 @@ const chainConfig = {
     ethereum: {
         name: 'Ethereum',
         contract: '0x0ec78ed49c2d27b315d462d43b5bab94d2c79bf8',
+        tradingPair: '0x0ec78ed49c2d27b315d462d43b5bab94d2c79bf8',
         dexScreener: 'https://dexscreener.com/ethereum/',
         tradingPartner: 'https://app.uniswap.org/',
         color: '#00ff88',
@@ -17,6 +18,7 @@ const chainConfig = {
     avalanche: {
         name: 'Avalanche',
         contract: '0x9209e7EbD056d72C5996220e99df6049253DeBCf',
+        tradingPair: '0xc2d319183EDA0CA465BacFFF5b66ccBa592bA267',
         dexScreener: 'https://dexscreener.com/avalanche/',
         tradingPartner: 'https://avaxarena.com/',
         color: '#ff4444',
@@ -197,8 +199,9 @@ function updateTradingInfo(config) {
         }
         
         // Update chain links
+        const pairAddress = config.tradingPair || config.contract;
         chainLinksElement.innerHTML = `
-            <a href="${config.dexScreener}${config.contract}" target="_blank" class="chain-link" style="color: ${config.color};">
+            <a href="${config.dexScreener}${pairAddress}" target="_blank" class="chain-link" style="color: ${config.color};">
                 <i class="fas fa-chart-line"></i> View Chart
             </a>
             <a href="${config.tradingPartner}" target="_blank" class="chain-link" style="color: ${config.color};">
@@ -244,7 +247,8 @@ function initializeButtons() {
     dexScreenerButton.addEventListener('click', function() {
         if (selectedChain && chainConfig[selectedChain].active) {
             const config = chainConfig[selectedChain];
-            window.open(`${config.dexScreener}${config.contract}`, '_blank');
+            const pairAddress = config.tradingPair || config.contract;
+            window.open(`${config.dexScreener}${pairAddress}`, '_blank');
         }
     });
     
